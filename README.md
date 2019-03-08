@@ -4,7 +4,7 @@
 
 
 ### Intoduction
-This is a bottom sheet dialog made for ["AppHouseBD"](https://apphousebd.com). Here all the social media links of the company is added and linked.
+This is a bottom sheet dialog library made for ["AppHouseBD"](https://apphousebd.com). Here all the social media links of the company is added and linked.
 
 
 #### Current Issues
