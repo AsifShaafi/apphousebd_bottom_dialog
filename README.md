@@ -7,7 +7,7 @@
 
 This is a bottom sheet dialog library made for ["AppHouseBD"](https://apphousebd.com). Here all the social media links of the company is added and linked.
 
-# Implementation (Android Studio)
+## Implementation (Android Studio)
 
 ## Gradle
 
