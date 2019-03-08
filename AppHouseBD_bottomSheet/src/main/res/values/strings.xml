@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppHouseBD Library</string>
+    <string name="apphousebd">AppHouseBD</string>
+    <string name="facebook">facebook</string>
+    <string name="instagram">instagram</string>
+    <string name="linkedin">linkedin</string>
+    <string name="website">website</string>
+    <string name="email">email</string>
+</resources>
