@@ -24,15 +24,15 @@ class AppHouseBDBottomSheetDialog : BottomSheetDialogFragment() {
         }
 
         view.apphousebd_instagram.setOnClickListener {
-            openLink("https://facebook.com/apphousebd")
+            openLink("https://www.instagram.com/apphousebd/")
         }
 
         view.apphousebd_linkedin.setOnClickListener {
-            openLink("https://facebook.com/apphousebd")
+            openLink("https://www.linkedin.com/company/apphousebd")
         }
 
         view.apphousebd_website.setOnClickListener {
-            openLink("https://facebook.com/apphousebd")
+            openLink("https://apphousebd.com")
         }
 
         view.apphousebd_mail.setOnClickListener {
