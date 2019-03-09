@@ -11,8 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val appHouseBDBottomSheetDialog = AppHouseBDBottomSheetDialog()
+
         btn.setOnClickListener {
-            AppHouseBDBottomSheetDialog().showDialog(supportFragmentManager)
+            appHouseBDBottomSheetDialog.showDialog(supportFragmentManager)
         }
     }
 }

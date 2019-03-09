@@ -1,11 +1,14 @@
 package com.apphousebd.apphousebd_bottomsheet
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.apphousebd_bottom_sheet.view.*
@@ -32,7 +35,7 @@ class AppHouseBDBottomSheetDialog : BottomSheetDialogFragment() {
         }
 
         view.apphousebd_website.setOnClickListener {
-            openLink("https://apphousebd.com")
+            openInAppBrowser(context!!, "https://apphousebd.com")
         }
 
         view.apphousebd_mail.setOnClickListener {
@@ -42,6 +45,30 @@ class AppHouseBDBottomSheetDialog : BottomSheetDialogFragment() {
         }
 
         return view
+
+    }
+
+    fun openInAppBrowser(context: Context, url: String) {
+
+        val builder = CustomTabsIntent.Builder()
+        builder.setShowTitle(true)
+        builder.addDefaultShareMenuItem()
+        builder.enableUrlBarHiding()
+
+        val customTabsIntent = builder.build()
+
+        customTabsIntent.intent.putExtra(
+                Intent.EXTRA_REFERRER,
+                Uri.parse("android-app://" + context.packageName)
+        )
+        try {
+
+            customTabsIntent.launchUrl(context, Uri.parse(url))
+        } catch (e: Exception) {
+            if (e.localizedMessage.contains("No Activity found")) {
+                Toast.makeText(context, "No app found to open the link", Toast.LENGTH_SHORT).show()
+            }
+        }
 
     }
 
