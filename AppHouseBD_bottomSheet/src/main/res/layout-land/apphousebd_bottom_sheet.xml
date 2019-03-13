@@ -14,12 +14,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="16dp"
-    app:behavior_hideable="true"
-    app:behavior_peekHeight="56dp"
-    app:layout_behavior="@string/bottom_sheet_behavior"
-    app:layout_scrollFlags="snapMargins">
+    app:behavior_hideable="false"
+    app:layout_behavior="@string/bottom_sheet_behavior">
 
     <ImageView
         android:id="@+id/apphousebd_logo"
@@ -28,33 +26,33 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:contentDescription="@string/apphousebd"
         android:src="@drawable/apphousebd"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/apphousebd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--<TextView-->
-        <!--android:id="@+id/textView10"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginStart="4dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:gravity="center"-->
-        <!--android:padding="16dp"-->
-        <!--android:text="@string/apphousebd"-->
-        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/apphousebd_logo" />-->
+    <!--android:id="@+id/textView10"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="16dp"-->
+    <!--android:text="@string/apphousebd"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/apphousebd_logo" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/apphousebd_logo">
 
@@ -62,9 +60,9 @@
             android:id="@+id/apphousebd_facebook"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/facebook"
@@ -75,9 +73,9 @@
             android:id="@+id/apphousebd_instagram"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/instagram"
@@ -88,9 +86,9 @@
             android:id="@+id/apphousebd_linkedin"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/linkedin"
@@ -101,9 +99,9 @@
             android:id="@+id/apphousebd_website"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/website"
@@ -114,9 +112,9 @@
             android:id="@+id/apphousebd_mail"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/email"
