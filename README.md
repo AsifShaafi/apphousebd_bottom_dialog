@@ -32,6 +32,10 @@ Add the following to your root/top level `build.gradle` file at the end of repos
 
 For example, see the app folder where it is implemented on a button click
 
+Screen shot:
+
+<img widht=250px height=400px src="ScreenShots/sample.png" alt="AppHouseBD_bottomSheet_Sample" >
+
 ##### Java Code
 
     AppHouseBDBottomSheetDialog().showDialog(SupportFragmentManager/FragmentManager, [tag(optional)])
