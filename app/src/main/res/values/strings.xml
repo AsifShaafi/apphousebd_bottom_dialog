@@ -12,5 +12,5 @@
   -->
 
 <resources>
-    <string name="app_name">AppHouseBD Library</string>
+    <string name="app_name">AppHouseBD BottomSheet Example</string>
 </resources>
