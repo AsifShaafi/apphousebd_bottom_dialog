@@ -40,9 +40,16 @@ Screen shots:
 
 <img widht=4000px height=250px src="ScreenShots/sample_landscape.png" alt="AppHouseBD_bottomSheet_Sample" >
 
-##### Java Code
+##### Code
 
-    AppHouseBDBottomSheetDialog().showDialog(SupportFragmentManager/FragmentManager, [tag(optional)])
+    kotlin: 
+
+        AppHouseBDBottomSheetDialog().showDialog(SupportFragmentManager/FragmentManager, [tag(optional)])
+    
+    Java:
+        
+        AppHouseBDBottomSheetDialog appDialog = new AppHouseBDBottomSheetDialog();
+        appDialog.showDialog(getSupportFragmentManager(), "AppHouseBD");
     
     
 ## License & Copyright
